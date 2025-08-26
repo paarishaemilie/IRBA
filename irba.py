@@ -3,15 +3,15 @@ import pandas as pd
 import os
 import matplotlib.pyplot as plt
 
-# ----------------- Load Data -----------------
-folder_path = os.path.expanduser("~/Downloads/IRBA_Case_Study_Tables")
+# ----------------- Load Data from GitHub -----------------
+base_url = "https://raw.githubusercontent.com/paarishaemilie/IRBA/main/"
 
-claim_basic = pd.read_csv(os.path.join(folder_path, "Claim_Basic.csv"))
-claim_diagnosis = pd.read_csv(os.path.join(folder_path, "Claim_Diagnosis.csv"))
-claim_doctor = pd.read_csv(os.path.join(folder_path, "Claim_Doctor.csv"))
-doctor_info = pd.read_csv(os.path.join(folder_path, "Doctor_Info.csv"))
-hospital_info = pd.read_csv(os.path.join(folder_path, "Hospital_Info.csv"))
-policy_info = pd.read_csv(os.path.join(folder_path, "Policy_Info.csv"))
+claim_basic = pd.read_csv(base_url + "Claim_Basic.csv")
+claim_diagnosis = pd.read_csv(base_url + "Claim_Diagnosis.csv")
+claim_doctor = pd.read_csv(base_url + "Claim_Doctor.csv")
+doctor_info = pd.read_csv(base_url + "Doctor_Info.csv")
+hospital_info = pd.read_csv(base_url + "Hospital_Info.csv")
+policy_info = pd.read_csv(base_url + "Policy_Info.csv")
 
 # ----------------- Preprocessing -----------------
 claim_basic["Admission Date"] = pd.to_datetime(claim_basic["Admission Date"], errors="coerce")
