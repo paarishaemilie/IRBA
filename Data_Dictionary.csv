@@ -1,0 +1,19 @@
+﻿Variable,Description
+Policy ID,Unique insurance policy number.
+Product,Product code of the insurance policy. 
+Inception Date,The first day the insurance policy coverage starts.
+Birth Year,Year of birth of the life insured.
+Gender,Gender of the life insured.
+Agent,Servicing agent for the policy
+Claim ID,Unique claim number of the claim.
+Admission Date,Date the life insured is admitted to the hospital.
+Discharged Date,Date the life insured is discharged from the hospital.
+Bill Amount,"Bill amount of the treatment before deduction of any insurance limits, deductible or co-insurance."
+Hospital ID,Unique hospital identifier.
+Surgical,Whether the life insured undergone a surgical procedure in this claim.
+Post-Hospitalisation,Whether the claim is a post-hospitalisation visit.
+Cashless,"Whether the claim settlement is cashless, i.e. claims payments are reimbursed to hospital directly and policyholder does not need to pay the hospital first."
+Doctor ID,Unique doctor identifier.
+Diagnosis,ICD10 diagnosis of the claim.
+Location,Location of the hospital.
+Specialty,The doctor's specialty.
